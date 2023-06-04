@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>$TTYD_LABEL</string>
+
+        <key>ProgramArguments</key>
+        <array>
+            <string>$HOMEBREW_BIN/ttyd</string>
+            <string>--interface</string>
+            <string>127.0.0.1</string>
+            <string>--port</string>
+            <string>$TTYD_PORT</string>
+            <string>--client-option</string>
+            <string>disableLeaveAlert=true</string>
+            <string>--client-option</string>
+            <string>fontSize=14</string>
+            <string>--client-option</string>
+            <string>theme={
+                "foreground": "#cccccc",
+                "background": "#000000",
+                "cursor": "#adadad",
+                "brightBlack": "#666666",
+                "brightBlue": "#3b8eea",
+                "brightCyan": "#29b8db",
+                "brightGreen": "#23d18b",
+                "brightMagenta": "#d670d6",
+                "brightRed": "#f14c4c",
+                "brightWhite": "#e5e5e5",
+                "brightYellow": "#f5f543",
+                "black": "#000000",
+                "blue": "#2472c8",
+                "cyan": "#11a8cd",
+                "green": "#0dbc79",
+                "magenta": "#bc3fbc",
+                "red": "#cd3131",
+                "white": "#e5e5e5",
+                "yellow": "#e5e510"
+            }</string>
+            <string>$HOMEBREW_BIN/tmux</string>
+            <string>new</string>
+            <string>-A</string>
+            <string>-s</string>
+            <string>ttyd</string>
+        </array>
+
+        <key>RunAtLoad</key>
+        <true/>
+
+        <key>KeepAlive</key>
+        <true/>
+
+        <key>WorkingDirectory</key>
+        <string>$HOME</string>
+
+        <key>StandardOutPath</key>
+        <string>$HOME/Library/Logs/$TTYD_LABEL.log</string>
+
+        <key>StandardErrorPath</key>
+        <string>$HOME/Library/Logs/$TTYD_LABEL.log</string>
+    </dict>
+</plist>

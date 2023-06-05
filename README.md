@@ -1,11 +1,11 @@
 # ttyd-launchd
 
-Set up a macOS launchd service for ttyd, running tmux.
+Set up a macOS launchd service for ttyd
 
 ## Installation
 
 ```sh
-brew install gettext ttyd tmux
+brew install gettext ttyd
 
 make install
 

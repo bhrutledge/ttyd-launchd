@@ -38,11 +38,8 @@
                 "white": "#e5e5e5",
                 "yellow": "#e5e510"
             }</string>
-            <string>$HOMEBREW_BIN/tmux</string>
-            <string>new</string>
-            <string>-A</string>
-            <string>-s</string>
-            <string>ttyd</string>
+            <string>$SHELL</string>
+            <string>--login</string>
         </array>
 
         <key>RunAtLoad</key>

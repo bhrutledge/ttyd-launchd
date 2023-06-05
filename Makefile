@@ -1,5 +1,4 @@
-# Maybe just localhost.ttyd?
-export TTYD_LABEL ?= local.ttyd.$(USER)
+export TTYD_LABEL ?= localhost.ttyd
 export TTYD_PORT ?= 7681 # ttyd default
 
 export HOMEBREW_BIN := $(shell brew --prefix)/bin

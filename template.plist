@@ -8,6 +8,7 @@
         <key>ProgramArguments</key>
         <array>
             <string>$HOMEBREW_BIN/ttyd</string>
+            <string>--writable</string>
             <string>--interface</string>
             <string>127.0.0.1</string>
             <string>--port</string>

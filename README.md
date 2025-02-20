@@ -1,6 +1,6 @@
 # ttyd-launchd
 
-Set up a macOS launchd service for ttyd
+Set up a macOS launchd service for [ttyd](https://github.com/tsl0922/ttyd), a command-line tool for using a terminal in a web browser.
 
 ## Installation
 
